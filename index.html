@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./IM-removebg-preview.png">
+    <title>Imagine Dragons</title>
+</head>
+
+<body>
+
+    <div class="sobre">
+        <p>Marcio Marques</p>
+    </div>
+
+    <div class="imagine">
+        <h1>IMAGINE DRAGONS</h1>
+    </div>
+
+    <div id="role">
+        <p class="role">&#9660;Role pra baixo&#9660;</p>
+    </div>
+
+    <div class="imagine2">
+        <p>Imagine Dragons é uma banda de pop rock formada em Las Vegas nos Estados Unidos, consistindo do vocalista Dan
+            Reynolds, do guitarrista Wayne Sermon, do baixista Ben McKee e do baterista Daniel Platzman. A banda
+            primeiro ganhou exposição com o lançamento do single "It's Time", seguido por seu álbum de estreia, Night
+            Visions (2012), que resultou nos singles "Radioactive" e "Demons". A Billboard colocou-os no topo do ranking
+            "Year In Rock" de 2013 e 2017 e nomeou-os como "Banda Revelação de 2013" e "Melhor Banda de 2017". A Rolling
+            Stone nomeou "Radioactive", que deteve o recorde da maioria das semanas na Billboard Hot 100 entre 2014 e
+            2021, como o "maior hit de rock do ano" (2013), e a MTV os chamou de "a maior banda de breakout do ano"
+            (também em 2013).</p>
+    </div>
+
+    <div class="imagine3">
+        <p>O segundo álbum de estúdio da banda, Smoke + Mirrors (2015), alcançou a primeira posição na Billboard 200 dos
+            Estados Unidos, bem como também alcançou o topo das tabelas musicais do Canadá e Reino Unido. O álbum foi
+            precedido pelo single "I Bet My Life", e pelo segundo e terceiro single, "Gold" e "Shots". A banda então
+            embarcou em uma turnê mundial de dez meses, o que levou a um breve hiato em 2016, com performances
+            ocasionais e contribuições de trilhas sonoras durante o restante do ano. O grupo lançou seu terceiro álbum
+            de estúdio, Evolve, em 2017, resultando em três singles no topo das paradas musicais, "Believer", "Thunder"
+            e "Whatever It Takes". O álbum alcançou o top cinco na maioria dos países. Após a conclusão do ciclo de
+            Evolve e de sua turnê mundial subsequente, Imagine Dragons lançou seu quarto álbum de estúdio, Origins
+            (2018). Enquanto todos os quatro álbuns foram comercialmente bem-sucedidos, a recepção da crítica foi mista.
+        </p>
+
+    </div>
+
+    <video autoplay loop id="background-video">
+        <source src="./Imagine Dragons - Sharks (Official Music Video).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <script>
+        var role = document.getElementById('role');
+
+        var ultimoScroll = window.pageYOffset;
+
+        window.onscroll = function () {
+            var novoScroll = window.pageYOffset;
+            if (ultimoScroll > novoScroll) {
+                // Rolar para cima
+                role.style.opacity = "1";
+            } else {
+                // Rolar para baixo
+                role.style.opacity = "0";
+            }
+            ultimoScroll = novoScroll;
+        }
+
+    </script>
+</body>
+
+</html>
