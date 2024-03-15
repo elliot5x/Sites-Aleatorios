@@ -57,6 +57,7 @@ h1 {
 }
 
 .role {
+    font-size: 30px;
     color: white;
     font-family: "Bebas Neue", sans-serif;
     position: fixed;
@@ -71,6 +72,11 @@ h1 {
     color: #c7bb10;
     font-family: "Bebas Neue", sans-serif;
     position: absolute;
-    top: -2%;
+    top: 1%;
     left: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #c7bb10;
 }

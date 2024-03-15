@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./IM-removebg-preview.png">
     <title>Imagine Dragons</title>
+    <script src="./scripts.js"></script>
 </head>
 
 <body>
 
     <div class="sobre">
-        <p>Marcio Marques</p>
+        <a href="https://github.com/elliot5x">Marcio Marques</a>
     </div>
 
     <div class="imagine">
@@ -21,7 +22,7 @@
     </div>
 
     <div id="role">
-        <p class="role">&#9660;Role pra baixo&#9660;</p>
+        <p class="role">Role pra baixo</p>
     </div>
 
     <div class="imagine2">
@@ -54,25 +55,6 @@
         Your browser does not support the video tag.
     </video>
 
-
-    <script>
-        var role = document.getElementById('role');
-
-        var ultimoScroll = window.pageYOffset;
-
-        window.onscroll = function () {
-            var novoScroll = window.pageYOffset;
-            if (ultimoScroll > novoScroll) {
-                // Rolar para cima
-                role.style.opacity = "1";
-            } else {
-                // Rolar para baixo
-                role.style.opacity = "0";
-            }
-            ultimoScroll = novoScroll;
-        }
-
-    </script>
 </body>
 
 </html>
