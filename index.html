@@ -1,60 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./IM-removebg-preview.png">
-    <title>Imagine Dragons</title>
+    <title>Login | Site</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <script src="./scripts.js"></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
 
-    <div class="sobre">
-        <a href="https://github.com/elliot5x">Marcio Marques</a>
+            <div class="remerber-forgot">
+                <label><input type="checkbox">Lembre-se de mim</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Registre agora</a></p>
+            </div>
+
+        </form>
     </div>
-
-    <div class="imagine">
-        <h1>IMAGINE DRAGONS</h1>
-    </div>
-
-    <div id="role">
-        <p class="role">Role pra baixo</p>
-    </div>
-
-    <div class="imagine2">
-        <p>Imagine Dragons é uma banda de pop rock formada em Las Vegas nos Estados Unidos, consistindo do vocalista Dan
-            Reynolds, do guitarrista Wayne Sermon, do baixista Ben McKee e do baterista Daniel Platzman. A banda
-            primeiro ganhou exposição com o lançamento do single "It's Time", seguido por seu álbum de estreia, Night
-            Visions (2012), que resultou nos singles "Radioactive" e "Demons". A Billboard colocou-os no topo do ranking
-            "Year In Rock" de 2013 e 2017 e nomeou-os como "Banda Revelação de 2013" e "Melhor Banda de 2017". A Rolling
-            Stone nomeou "Radioactive", que deteve o recorde da maioria das semanas na Billboard Hot 100 entre 2014 e
-            2021, como o "maior hit de rock do ano" (2013), e a MTV os chamou de "a maior banda de breakout do ano"
-            (também em 2013).</p>
-    </div>
-
-    <div class="imagine3">
-        <p>O segundo álbum de estúdio da banda, Smoke + Mirrors (2015), alcançou a primeira posição na Billboard 200 dos
-            Estados Unidos, bem como também alcançou o topo das tabelas musicais do Canadá e Reino Unido. O álbum foi
-            precedido pelo single "I Bet My Life", e pelo segundo e terceiro single, "Gold" e "Shots". A banda então
-            embarcou em uma turnê mundial de dez meses, o que levou a um breve hiato em 2016, com performances
-            ocasionais e contribuições de trilhas sonoras durante o restante do ano. O grupo lançou seu terceiro álbum
-            de estúdio, Evolve, em 2017, resultando em três singles no topo das paradas musicais, "Believer", "Thunder"
-            e "Whatever It Takes". O álbum alcançou o top cinco na maioria dos países. Após a conclusão do ciclo de
-            Evolve e de sua turnê mundial subsequente, Imagine Dragons lançou seu quarto álbum de estúdio, Origins
-            (2018). Enquanto todos os quatro álbuns foram comercialmente bem-sucedidos, a recepção da crítica foi mista.
-        </p>
-
-    </div>
-
-    <video autoplay loop id="background-video">
-        <source src="./Imagine Dragons - Sharks (Official Music Video).mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    <audio autoplay loop src="./M83 - My Tears Are Becoming A Sea (Official Video).mp3" type="audio/mpeg" id="meuAudio"
+        preload="metadata"></audio>
+    <video autoplay loop muted poster="placeholder.jpg" id="background-video">
+        <source src="./Let There Be Life A Cosmic Art Loop (4K) (2x Loop).mp4" type="video/mp4">
     </video>
-
 </body>
 
 </html>
